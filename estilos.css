@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#3d0b19;
+    color:white;
+}
+
+/* MENU */
+
+nav{
+
+    position:fixed;
+    top:0;
+
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 50px;
+
+    background:rgba(30,0,10,.90);
+
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+}
+
+.logo{
+    font-weight:700;
+    color:#ffd56f;
+    font-size:1.1rem;
+}
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+
+    color:#ffd56f;
+}
+
+/* HEADER */
+
+header{
+
+    height:100vh;
+
+    background-image:
+    linear-gradient(
+    rgba(20,0,0,.45),
+    rgba(40,0,10,.75)),
+    url("img/fondo.jpeg");
+
+    background-size:cover;
+    background-position:center top;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+
+    text-align:center;
+
+    background:rgba(0,0,0,.25);
+
+    padding:40px;
+
+    border-radius:25px;
+
+    backdrop-filter:blur(4px);
+}
+
+.hero-content h1{
+
+    font-size:4rem;
+    color:#fff7e8;
+    margin-bottom:10px;
+}
+
+.carrera{
+
+    color:#ffd56f;
+    font-size:1.5rem;
+    font-weight:600;
+}
+
+.universidad{
+
+    margin-top:10px;
+    font-size:1.1rem;
+}
+
+/* SECCIONES */
+
+section{
+
+    padding:100px 10%;
+}
+
+h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:#ffd56f;
+
+    font-size:2.2rem;
+}
+
+/* GRID */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+}
+
+/* TARJETAS */
+
+.card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.35);
+}
+
+.card h3{
+
+    color:#ffbf47;
+
+    margin-bottom:15px;
+}
+
+.card p{
+
+    line-height:1.6;
+}
+
+.card a{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    color:#ffd56f;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+.card a:hover{
+
+    color:white;
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#25050f;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+
+        font-size:2.3rem;
+    }
+
+    .carrera{
+
+        font-size:1.2rem;
+    }
+
+    section{
+
+        padding:80px 6%;
+    }
+}
